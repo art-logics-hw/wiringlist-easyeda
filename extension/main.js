@@ -119,7 +119,18 @@ function print_table(ids = []) {
     for (const row of table) {
         tbody += `<tr><td>${row.connector1}</td><td>${row.connector2}</td><td>${row.size}</td><td>${row.color}</td><td>${row.description}</td></tr>`
     }
-    const css = `table { 
+    const css = `
+    html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        }
+    div {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        }
+    table { 
         width: 750px; 
         border-collapse: collapse; 
         margin:50px auto;
@@ -139,7 +150,7 @@ function print_table(ids = []) {
         text-align: left; 
         font-size: 18px;
         }`
-    const html = `<html><head><title>ART Logics Wiring List</title><style>${css}</style></head><body><table>${thead}${tbody}</table></body></html>`
+    const html = `<html><head><title>ART Logics Wiring List</title><style>${css}</style></head><body><div><table>${thead}${tbody}</table></div></body></html>`
     const width = 800
     const height = 600
     let left, top
