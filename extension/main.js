@@ -14,7 +14,7 @@ function _essensify_part(part) {
         }
     }
     return {
-        // _id: part.head.gId,
+        _id: part.head.gId,
         id: annotation_list[1],
         desc: annotation_list[0],
         pins: pins
@@ -32,15 +32,24 @@ function _essensify_wire(wire) {
  * @param  {[Object]} source Source JSON object
  * @return {[Object]}        Source JSON object with essential parts and wiresinformations
  */
-function essensify_source(source) {
+function essensify_source(source, ids=[]) {
     let parts = []
     let wires = []
     for (const[id, _part] of Object.entries(source.schlib)) {
         if (id.startsWith('frame_lib')) {
             continue
         }
-        parts.push(_essensify_part(_part))
+        if (ids.length == 0) {
+            parts.push(_essensify_part(_part))
+        } else {
+            part = _essensify_part(_part)
+            if (part._id == ids[0] || part._id == ids[1]) {
+                parts.push(part)
+            }
+        }
     }
+
+    console.log(ids, parts)
 
     for (const[id, _wire] of Object.entries(source.wire)) {
         wires.push(_essensify_wire(_wire))
@@ -101,18 +110,29 @@ function list_wiring(essential_source) {
     return table
 }
 
-function print_table() {
+function print_table(ids = []) {
     const src = api('getSource', {type:'json'});
     console.table(
         list_wiring(
-            essensify_source(src)
+            essensify_source(src, ids)
         )
     )    
 }
 
 api('createCommand', {
     'extension-generate-wiringlist' : () => {
-        print_table();
+        ids = api('getSelectedIds')
+		ids = ids.split(',')
+        if (ids.length == 1 && ids[0] == '') {
+            ids = []
+        }
+        if (ids.length == 0) {
+            $.messager.error("No part selected. Select two parts and try again!")
+        } else if (ids.length != 2) {
+            $.messager.error("Must select only two parts.")
+        } else {
+            print_table(ids)
+        }
     }
 });
 
