@@ -16,9 +16,9 @@ Helper features for ARTLogics hardware designers
 
 **Wiring List** feature is only available in schematic editor. It is not available for PCB editor or any other kind of viewer instances.
 
-Open a schematics, click `ART Logics > Generate Wiring List` on the menu bar.
-
-(Did you see any result?)
+* Open a schematics
+* select two connecters wired each other
+* click `ART Logics > Generate Wiring List` on the menu bar.
 
 
 ## ChangeLog
