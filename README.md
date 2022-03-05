@@ -1,3 +1,6 @@
+<img src="./doc/easyeda-logo.png" height=100 />
+<img src="./doc/logo.png" height=100 />
+
 # ARTLogics EasyEDA Extension
 
 Helper features for ARTLogics hardware designers
