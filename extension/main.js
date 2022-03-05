@@ -113,7 +113,7 @@ function list_wiring(essential_source) {
 function print_table(ids = []) {
     const src = api('getSource', {type:'json'})
     let table = list_wiring(essensify_source(src, ids))
-    console.table(table)
+    // console.table(table)
     const thead = '<tr><th>Connector 1</th><th>Connector 2</th><th>Size</th><th>Color</th><th>Description</th></tr>'
     let tbody = ''
     for (const row of table) {
