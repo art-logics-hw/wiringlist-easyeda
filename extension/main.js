@@ -102,29 +102,29 @@ function list_wiring(essential_source) {
 }
 
 function print_table() {
-	const src = api('getSource', {type:'json'});
-	console.table(
-		list_wiring(
-			essensify_source(src)
-		)
-	)	
+    const src = api('getSource', {type:'json'});
+    console.table(
+        list_wiring(
+            essensify_source(src)
+        )
+    )    
 }
 
 api('createCommand', {
-	'extension-generate-wiringlist' : () => {
-		print_table();
-	}
+    'extension-generate-wiringlist' : () => {
+        print_table();
+    }
 });
 
 api('createToolbarButton', {
-	icon: api('getRes', { file: 'logo.png' }),
-	title: 'Main Menu Item Tooltip',
-	fordoctype: 'sch',
-	menu:[
-		{
-			"text":"Generate Wiring List", 
-			"cmd":"extension-generate-wiringlist",
-			icon: api('getRes', { file: 'logo.png' })
-		},
-	]
+    icon: api('getRes', { file: 'logo.png' }),
+    title: 'Main Menu Item Tooltip',
+    fordoctype: 'sch',
+    menu:[
+        {
+            "text":"Generate Wiring List", 
+            "cmd":"extension-generate-wiringlist",
+            icon: api('getRes', { file: 'logo.png' })
+        },
+    ]
 });
