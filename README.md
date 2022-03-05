@@ -1,5 +1,9 @@
-<img src="./doc/easyeda-logo.png" height=100 />
-<img src="./doc/logo.png" height=100 />
+<table>
+<tr>
+<td><img src="./doc/easyeda-logo.png" height=100 /></td>
+<td><img src="./doc/logo.png" height=100 /></td>
+</tr>
+</table>
 
 # ARTLogics EasyEDA Extension
 
