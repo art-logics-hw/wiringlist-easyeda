@@ -27,6 +27,7 @@ function _essensify_wire(wire) {
         points: wire.pointArr
     }
 }
+
 /**
  * Extract essential informations of a schematic source
  * @param  {[Object]} source Source JSON object
@@ -88,9 +89,9 @@ function _is_wired(pin_a, pin_b, wires) {
 
 function list_wiring(essential_source) {
     let table = []
-    for (let i = 0; i < essential_source.parts.length; i++) {
+    for (let i = 0;i < essential_source.parts.length;i++) {
         const a = essential_source.parts[i]
-        for (let j = i+1; j < essential_source.parts.length; j++) {
+        for (let j = i+1;j < essential_source.parts.length;j++) {
             const b = essential_source.parts[j]
             for (const[pin_a_id, pin_a] of Object.entries(a.pins)) {
                 for (const[pin_b_id, pin_b] of Object.entries(b.pins)) {
@@ -131,23 +132,23 @@ function print_table(ids = []) {
         overflow-y: auto;
         }
     table { 
-        width: 750px; 
-        border-collapse: collapse; 
+        width: 750px;
+        border-collapse: collapse;
         margin:50px auto;
         }
     /* Zebra striping */
     tr:nth-of-type(odd) { 
-        background: #eee; 
+        background: #eee;
         }
     th { 
-        background: #3498db; 
-        color: white; 
-        font-weight: bold; 
+        background: #c00000;
+        color: white;
+        font-weight: bold;
         }
     td, th { 
-        padding: 10px; 
-        border: 1px solid #ccc; 
-        text-align: left; 
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
         font-size: 18px;
         }`
     const html = `<html><head><title>ART Logics Wiring List</title><style>${css}</style></head><body><div><table>${thead}${tbody}</table></div></body></html>`
