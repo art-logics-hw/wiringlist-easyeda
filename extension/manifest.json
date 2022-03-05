@@ -1,0 +1,9 @@
+{
+	"name": "ARTLogics",
+	"description": "helper tools for ARTLogics products design",
+	"version": "0.1",
+	"icons": {
+		"default": "logo.png"
+	},
+	"scripts": [ "main.js" ]
+}
