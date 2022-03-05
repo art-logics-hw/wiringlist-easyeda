@@ -1,4 +1,4 @@
-var extensionId = 'extension-artlogics'.split('-')[1];
+let extensionId = 'extension-artlogics'.split('-')[1];
 
 function _essensify_part(part) {
     let annotation_list = []
@@ -60,10 +60,10 @@ function essensify_source(source, ids=[]) {
     }
 }
 
-function TableRow(connector1, connector2, thickness, color, description) {
+function TableRow(connector1, connector2, size, color, description) {
     this.connector1 = connector1
     this.connector2 = connector2
-    this.thickness = thickness
+    this.size = size
     this.color = color
     this.description = description
 }
@@ -111,12 +111,42 @@ function list_wiring(essential_source) {
 }
 
 function print_table(ids = []) {
-    const src = api('getSource', {type:'json'});
-    console.table(
-        list_wiring(
-            essensify_source(src, ids)
-        )
-    )    
+    const src = api('getSource', {type:'json'})
+    let table = list_wiring(essensify_source(src, ids))
+    console.table(table)
+    const thead = '<tr><th>Connector 1</th><th>Connector 2</th><th>Size</th><th>Color</th><th>Description</th></tr>'
+    let tbody = ''
+    for (const row of table) {
+        tbody += `<tr><td>${row.connector1}</td><td>${row.connector2}</td><td>${row.size}</td><td>${row.color}</td><td>${row.description}</td></tr>`
+    }
+    const css = `table { 
+        width: 750px; 
+        border-collapse: collapse; 
+        margin:50px auto;
+        }
+    /* Zebra striping */
+    tr:nth-of-type(odd) { 
+        background: #eee; 
+        }
+    th { 
+        background: #3498db; 
+        color: white; 
+        font-weight: bold; 
+        }
+    td, th { 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        text-align: left; 
+        font-size: 18px;
+        }`
+    const html = `<html><head><title>ART Logics Wiring List</title><style>${css}</style></head><body><table>${thead}${tbody}</table></body></html>`
+    const width = 800
+    const height = 600
+    let left, top
+    left = (window.screen.width / 2) - ((width / 2) + 10)
+    top = (window.screen.height / 2) - ((height / 2) + 50)
+    let newWin = window.open('url','ART Logics Wiring List', `status=no,height=${height},width=${width},resizable=yes,left=${left},top=${top},screenX=${left},screenY=${top},toolbar=no,menubar=no,scrollbars=no,location=no,directories=no`)
+    newWin.document.write(html)
 }
 
 api('createCommand', {
