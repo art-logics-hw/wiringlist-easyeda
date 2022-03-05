@@ -1,6 +1,5 @@
-window.api = api;
-console.log("You can now use api() in the Browser console!");
-var extensionId = 'extension-artlogics-wiringlist'.split('-')[1];
+var extensionId = 'extension-artlogics'.split('-')[1];
+
 function _essensify_part(part) {
     let annotation_list = []
     for (const[key, value] of Object.entries(part.annotation)) {
