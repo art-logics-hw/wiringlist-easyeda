@@ -28,6 +28,7 @@ Helper features for ARTLogics hardware designers
 * Click `ART Logics > Generate Wiring List` on the menu bar
 * If the result table is good, press `Ctrl+A` and paste to document editor (MS Word or LibreOffice Writer)
 
+<img src="./doc/usage.gif" />
 
 ## Limitations
 
