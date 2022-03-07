@@ -6,7 +6,7 @@
 <h1>ARTLogics EasyEDA Extension</h1>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://semver.org)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://semver.org)
 </div>
 
 
@@ -40,11 +40,3 @@ Thus, these limitations exist.
 
 * Wires with joints: If the wire has joints and devided into multi parts, the extension does not recognize the wiring.
 * Net port: if the other end of wire is a net port, the extension cannot generate wiring list between the connector and net port.
-
-
-## ChangeLog
-
-### Version 0.1
-
-The very first version, in development.
-code jkljkflda;sjfkl;asjfdkl;asfjdl

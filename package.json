@@ -1,6 +1,6 @@
 {
   "name": "artlogics-wiringlist",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Helper features for ARTLogics hardware designers",
   "main": "index.js",
   "directories": {
