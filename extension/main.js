@@ -198,5 +198,6 @@ module.exports = {
     _essensify_part: _essensify_part,
     _essensify_wire: _essensify_wire,
     essensify_source: essensify_source,
-    _is_in: _is_in
+    _is_in: _is_in,
+    list_wiring: list_wiring
 }

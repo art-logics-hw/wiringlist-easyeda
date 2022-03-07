@@ -4,7 +4,7 @@ const src = require('./src.json')
 test("_essensify_part(): extract essential part information", () => {
     const id = "gge1dc71d6334fc68d7"
     const part = src.schlib[id]
-    const essentified_part = {
+    const essential_part = {
         "_id": id,
         "desc": "B4B-XH-A(LF)(SN)",
         "id": "CN-XH",
@@ -15,25 +15,25 @@ test("_essensify_part(): extract essential part information", () => {
             "4": {"name": "4", "x": 570, "y": -455}
         }
     }
-    expect(extension._essensify_part(part)).toMatchObject(essentified_part)
+    expect(extension._essensify_part(part)).toMatchObject(essential_part)
 })
 
 test("_essensify_wire(): extract essential wire information", () => {
     const id = "gge571"
     const wire = src.wire[id]
-    const essentified_wire = {
+    const essential_wire = {
         id: wire.gId,
         points: wire.pointArr
     }
-    expect(extension._essensify_wire(wire)).toMatchObject(essentified_wire)
+    expect(extension._essensify_wire(wire)).toMatchObject(essential_wire)
 })
 
 test("essensify_source(): extract essential information", () => {
-    const essensified_source = extension.essensify_source(src)
-    const parts = essensified_source.parts
+    const essential_source = extension.essensify_source(src)
+    const parts = essential_source.parts
     expect(parts.length).toEqual(2)
     expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
-    expect(essensified_source.wires.length).toEqual(3)
+    expect(essential_source.wires.length).toEqual(3)
 })
 
 test("_is_in(): check if a point is in a points list", () => {
@@ -49,4 +49,14 @@ test("_is_in(): check if a point is in a points list", () => {
         {x: 2, y: 0}
     ]
     expect(extension._is_in(p, plist_2)).toEqual(false)
+})
+
+test("list_wiring(): get wiring list", () => {
+    const essential_source = extension.essensify_source(src)
+    const table = [
+        {"color": "", "connector1": "U1-1", "connector2": "CN-XH-4", "description": "", "size": ""},
+        {"color": "", "connector1": "U1-2", "connector2": "CN-XH-3", "description": "", "size": ""},
+        {"color": "", "connector1": "U1-4", "connector2": "CN-XH-1", "description": "", "size": ""}
+    ]
+    expect(extension.list_wiring((essential_source))).toMatchObject(table)
 })
