@@ -174,9 +174,7 @@ try {
                 ids = []
             }
             if (ids.length == 0) {
-                $.messager.error("No part selected. Select two parts and try again!")
-            } else if (ids.length != 2) {
-                $.messager.error("Must select only two parts.")
+                $.messager.error("No part selected. Select parts and try again!")
             } else {
                 const src = api('getSource', {type:'json'})
                 console.log(src)
