@@ -35,3 +35,18 @@ test("essensify_source(): extract essential information", () => {
     expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
     expect(essensified_source.wires.length).toEqual(3)
 })
+
+test("_is_in(): check if a point is in a points list", () => {
+    const p = {x: 1, y: 2}
+    const plist_1 = [
+        {x: 0, y: 4},
+        {x: 1, y: 2},
+        {x: 2, y: 0}
+    ]
+    expect(extension._is_in(p, plist_1)).toEqual(true)
+    const plist_2 = [
+        {x: 0, y: 4},
+        {x: 2, y: 0}
+    ]
+    expect(extension._is_in(p, plist_2)).toEqual(false)
+})

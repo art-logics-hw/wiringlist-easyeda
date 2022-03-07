@@ -50,8 +50,6 @@ function essensify_source(source, ids=[]) {
         }
     }
 
-    console.log(ids, parts)
-
     for (const[id, _wire] of Object.entries(source.wire)) {
         wires.push(_essensify_wire(_wire))
     }
@@ -199,5 +197,6 @@ try {
 module.exports = {
     _essensify_part: _essensify_part,
     _essensify_wire: _essensify_wire,
-    essensify_source: essensify_source
+    essensify_source: essensify_source,
+    _is_in: _is_in
 }
