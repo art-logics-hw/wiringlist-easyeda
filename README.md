@@ -1,11 +1,14 @@
-<table>
-<tr>
+<div align="center">
+<table><tr>
 <td><img src="./doc/easyeda-logo.png" height=100 /></td>
 <td><img src="./doc/logo.png" height=100 /></td>
-</tr>
-</table>
+</tr></table>
+<h1>ARTLogics EasyEDA Extension</h1>
 
-# ARTLogics EasyEDA Extension
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://semver.org)
+</div>
+
 
 Helper features for ARTLogics hardware designers
 
@@ -44,3 +47,4 @@ Thus, these limitations exist.
 ### Version 0.1
 
 The very first version, in development.
+code jkljkflda;sjfkl;asjfdkl;asfjdl
