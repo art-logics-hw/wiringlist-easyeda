@@ -196,4 +196,7 @@ try {
     console.log('api() function call failed.')
 }
 
-module.exports = _essensify_part
+module.exports = {
+    _essensify_part: _essensify_part,
+    _essensify_wire: _essensify_wire
+}
