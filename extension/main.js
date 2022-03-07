@@ -44,8 +44,11 @@ function essensify_source(source, ids=[]) {
             parts.push(_essensify_part(_part))
         } else {
             part = _essensify_part(_part)
-            if (part._id == ids[0] || part._id == ids[1]) {
-                parts.push(part)
+            for (const id of ids) {
+                if (part._id == id) {
+                    parts.push(part)
+                    break
+                }
             }
         }
     }

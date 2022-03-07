@@ -29,11 +29,14 @@ test("_essensify_wire(): extract essential wire information", () => {
 })
 
 test("essensify_source(): extract essential information", () => {
-    const essential_source = extension.essensify_source(src)
+    let essential_source = extension.essensify_source(src)
     const parts = essential_source.parts
     expect(parts.length).toEqual(2)
     expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
     expect(essential_source.wires.length).toEqual(3)
+
+    essential_source = extension.essensify_source(src, ["ggec6d93d66490ec27a"])
+    expect(essential_source.parts.length).toEqual(1)
 })
 
 test("_is_in(): check if a point is in a points list", () => {
