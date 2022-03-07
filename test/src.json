@@ -1,0 +1,1643 @@
+{
+    "itemOrder": [
+        "frame_lib_1",
+        "ggec6d93d66490ec27a",
+        "gge1dc71d6334fc68d7",
+        "gge571",
+        "gge574",
+        "gge577",
+        "gge589",
+        "gge593"
+    ],
+    "colors": {
+        "background": "#2F333D",
+        "grid": "#21252B",
+        "select": "#FFFFFF",
+        "wire": "#98C379",
+        "bus": "#61AEEF",
+        "busEntry": "#56B6C2",
+        "netLabel": "#56B6C2",
+        "netFlag": "#61AFEF",
+        "noConnect": "#F07178",
+        "voltageProbe": "#61AFEF",
+        "text": "#979FAD",
+        "pin": "#61AEEF",
+        "pinName": "#979FAD",
+        "pinNumber": "#979FAD",
+        "partGraphics": "#979FAD",
+        "partGraphicsPrefix": "#979FAD",
+        "partGraphicsName": "#979FAD",
+        "sheet": "#979FAD",
+        "draw": "#FFFFFF",
+        "drawFill": "#3A3F4B",
+        "arrow": "#FFFFFF",
+        "junction": "#E5C17C"
+    },
+    "canvas": {
+        "viewWidth": 1000,
+        "viewHeight": 1000,
+        "backGround": "#2F333D",
+        "gridVisible": "yes",
+        "gridColor": "#21252B",
+        "gridSize": 5,
+        "canvasWidth": 1000,
+        "canvasHeight": 1000,
+        "gridStyle": "line",
+        "snapSize": 5,
+        "unit": "pixel",
+        "altSnapSize": 5,
+        "originX": 0,
+        "originY": 0
+    },
+    "schlib": {
+        "frame_lib_1": {
+            "head": {
+                "x": 0,
+                "y": -806,
+                "c_para": "package`NONE`BOM_Manufacturer Part`?`spicePre`.`",
+                "rotation": "",
+                "importFlag": "0",
+                "gId": "frame_lib_1",
+                "puuid": "",
+                "uuid": "",
+                "locked": "0",
+                "bind_pcb_id": "a05dd5a058f99023",
+                "convert_to_pcb": "yes",
+                "add_into_bom": "yes",
+                "datastrid": "",
+                "utime": "",
+                "pdatastrid": ""
+            },
+            "itemOrder": [
+                "gge226",
+                "gge10",
+                "gge223",
+                "gge13",
+                "gge19",
+                "gge25",
+                "gge31",
+                "gge37",
+                "gge43",
+                "gge49",
+                "gge55",
+                "gge61",
+                "gge67",
+                "gge73",
+                "gge79",
+                "gge85",
+                "gge91",
+                "gge97",
+                "gge103",
+                "gge109",
+                "gge115",
+                "gge121",
+                "gge124",
+                "gge127",
+                "gge130",
+                "gge133",
+                "gge136",
+                "gge139",
+                "gge142",
+                "gge148",
+                "gge154",
+                "gge160",
+                "gge166",
+                "gge172",
+                "gge178",
+                "gge184",
+                "gge190",
+                "gge196",
+                "gge202",
+                "gge208",
+                "gge214",
+                "gge217"
+            ],
+            "annotation": {
+                "gge226": {
+                    "mark": "N",
+                    "x": "571.32",
+                    "y": "-809",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "A",
+                    "visible": "0",
+                    "textAnchor": "start",
+                    "gId": "gge226",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge223": {
+                    "mark": "P",
+                    "x": "571.32",
+                    "y": "-817.82",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "A",
+                    "visible": "0",
+                    "textAnchor": "start",
+                    "gId": "gge223",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge13": {
+                    "mark": "L",
+                    "x": "1.5",
+                    "y": "-698",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "A",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge13",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge19": {
+                    "mark": "L",
+                    "x": "1140.5",
+                    "y": "-698",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "A",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge19",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge25": {
+                    "mark": "L",
+                    "x": "1.5",
+                    "y": "-502",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "B",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge25",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge31": {
+                    "mark": "L",
+                    "x": "1140.5",
+                    "y": "-502",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "B",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge31",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge37": {
+                    "mark": "L",
+                    "x": "1.5",
+                    "y": "-306",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "C",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge37",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge43": {
+                    "mark": "L",
+                    "x": "1140.5",
+                    "y": "-306",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "C",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge43",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge49": {
+                    "mark": "L",
+                    "x": "1.5",
+                    "y": "-110",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "D",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge49",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge55": {
+                    "mark": "L",
+                    "x": "1140.5",
+                    "y": "-110",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "D",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge55",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge61": {
+                    "mark": "L",
+                    "x": "108",
+                    "y": "-797.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "1",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge61",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge67": {
+                    "mark": "L",
+                    "x": "108",
+                    "y": "-1.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "1",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge67",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge73": {
+                    "mark": "L",
+                    "x": "304",
+                    "y": "-797.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "2",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge73",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge79": {
+                    "mark": "L",
+                    "x": "304",
+                    "y": "-1.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "2",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge79",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge85": {
+                    "mark": "L",
+                    "x": "500",
+                    "y": "-797.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "3",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge85",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge91": {
+                    "mark": "L",
+                    "x": "500",
+                    "y": "-1.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "3",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge91",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge97": {
+                    "mark": "L",
+                    "x": "696",
+                    "y": "-797.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "4",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge97",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge103": {
+                    "mark": "L",
+                    "x": "696",
+                    "y": "-1.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "4",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge103",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge109": {
+                    "mark": "L",
+                    "x": "892",
+                    "y": "-797.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "5",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge109",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge115": {
+                    "mark": "L",
+                    "x": "892",
+                    "y": "-1.5",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "5",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge115",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                },
+                "gge142": {
+                    "mark": "L",
+                    "x": "699.99995",
+                    "y": "-77",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "TITLE:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge142",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge148": {
+                    "mark": "L",
+                    "x": "757.62495",
+                    "y": "-64.41",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "10pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Sheet A Title",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge148",
+                    "locked": "0",
+                    "c_etype": "frame_title"
+                },
+                "gge154": {
+                    "mark": "L",
+                    "x": "1064.62495",
+                    "y": "-63.75",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "REV:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge154",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge160": {
+                    "mark": "L",
+                    "x": "1102.62495",
+                    "y": "-63.75",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "9pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "1.0",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge160",
+                    "locked": "0",
+                    "c_etype": "frame_version"
+                },
+                "gge166": {
+                    "mark": "L",
+                    "x": "804.62495",
+                    "y": "-15",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Date:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge166",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge172": {
+                    "mark": "L",
+                    "x": "851.62495",
+                    "y": "-14.52",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "9pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "2022-03-03",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge172",
+                    "locked": "0",
+                    "c_etype": "frame_date"
+                },
+                "gge178": {
+                    "mark": "L",
+                    "x": "1063.62495",
+                    "y": "-35",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Sheet:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge178",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge184": {
+                    "mark": "L",
+                    "x": "1108.62495",
+                    "y": "-34.52",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "9pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "1/1",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge184",
+                    "locked": "0",
+                    "c_etype": "frame_sheet"
+                },
+                "gge190": {
+                    "mark": "L",
+                    "x": "943.62495",
+                    "y": "-14.75",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Drawn By:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge190",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge196": {
+                    "mark": "L",
+                    "x": "1008.63",
+                    "y": "-14.75",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "9pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Hotte Shen",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge196",
+                    "locked": "0",
+                    "c_etype": "frame_drawn"
+                },
+                "gge202": {
+                    "mark": "L",
+                    "x": "804.62495",
+                    "y": "-36.75",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "8pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Company:",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge202",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge208": {
+                    "mark": "L",
+                    "x": "871.24995",
+                    "y": "-36.64",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "",
+                    "fontSize": "9pt",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "Your Company",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge208",
+                    "locked": "0",
+                    "c_etype": "frame_company"
+                }
+            },
+            "path": {
+                "gge10": {
+                    "pathString": "M 206 -796 L 206 -806 M 206 -10 L 206 0 M 402 -796 L 402 -806 M 402 -10 L 402 0 M 598 -796 L 598 -806 M 598 -10 L 598 0 M 794 -796 L 794 -806 M 794 -10 L 794 0 M 990 -796 L 990 -806 M 990 -10 L 990 0 M 10 -600 L 0 -600 M 1139 -600 L 1149 -600 M 10 -404 L 0 -404 M 1139 -404 L 1149 -404 M 10 -208 L 0 -208 M 1139 -208 L 1149 -208 M 10 -12 L 0 -12 M 1139 -12 L 1149 -12",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge10",
+                    "locked": "0",
+                    "c_etype": "frame_tick"
+                }
+            },
+            "rect": {
+                "gge121": {
+                    "x": "10",
+                    "y": "-796",
+                    "rx": "",
+                    "ry": "",
+                    "width": "1129",
+                    "height": "786",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge121",
+                    "locked": "0",
+                    "c_etype": "frame_innerbox"
+                },
+                "gge124": {
+                    "x": "0",
+                    "y": "-806",
+                    "rx": "",
+                    "ry": "",
+                    "width": "1149",
+                    "height": "806",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge124",
+                    "locked": "0",
+                    "c_etype": "frame_outbox"
+                },
+                "gge127": {
+                    "x": "694.99995",
+                    "y": "-90",
+                    "rx": "",
+                    "ry": "",
+                    "width": "444",
+                    "height": "80",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge127",
+                    "locked": "0",
+                    "c_etype": "frame_hitarea"
+                }
+            },
+            "polyline": {
+                "gge130": {
+                    "pointArr": [
+                        {
+                            "x": 695.1,
+                            "y": -50.75
+                        },
+                        {
+                            "x": 1138.63,
+                            "y": -50.75
+                        }
+                    ],
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge130",
+                    "locked": "0"
+                },
+                "gge133": {
+                    "pointArr": [
+                        {
+                            "x": 799.63,
+                            "y": -30.75
+                        },
+                        {
+                            "x": 1138.63,
+                            "y": -30.75
+                        }
+                    ],
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge133",
+                    "locked": "0"
+                },
+                "gge136": {
+                    "pointArr": [
+                        {
+                            "x": 1059.61,
+                            "y": -89.93
+                        },
+                        {
+                            "x": 1059.63,
+                            "y": -50.75
+                        }
+                    ],
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge136",
+                    "locked": "0"
+                },
+                "gge139": {
+                    "pointArr": [
+                        {
+                            "x": 1059.63,
+                            "y": -50.75
+                        },
+                        {
+                            "x": 1059.63,
+                            "y": -30.75
+                        }
+                    ],
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge139",
+                    "locked": "0"
+                },
+                "gge214": {
+                    "pointArr": [
+                        {
+                            "x": 799.63,
+                            "y": -50.75
+                        },
+                        {
+                            "x": 799.63,
+                            "y": -10.75
+                        }
+                    ],
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge214",
+                    "locked": "0"
+                }
+            },
+            "pimage": {
+                "gge217": {
+                    "mark": "L",
+                    "visible": "1",
+                    "gId": "gge217",
+                    "locked": "0",
+                    "imgid": "gge220",
+                    "imgx": "694.99995",
+                    "imgy": "-38",
+                    "imgwidth": "104",
+                    "imgheight": "20",
+                    "imghref": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTIwIg0KCSB2aWV3Qm94PSIwIDAgMTY5Mi45IDM0MS41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNjkyLjkgMzQxLjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiM1NTg4RkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05MDEuNywxNjEuMWMyLjMtMS44LDUuMS0yLjcsOC4zLTIuN2M0LjMsMCw4LjksMS42LDEzLjgsNC43YzQuOSwzLjEsOS42LDgsMTQuMSwxNC43bDE3LjQtMjcuOQ0KCQljLTUuNC03LjgtMTIuMS0xMy45LTIwLjItMTguMmMtOC4xLTQuMy0xNi43LTYuNC0yNS43LTYuNGMtMTIuOCwwLTI0LDMuOS0zMy40LDExLjdjLTkuNCw3LjgtMTQuMSwxOC0xNC4xLDMwLjQNCgkJYzAsOC45LDMsMTcuNCw5LDI1LjRjNC4zLDUuNywxMi4xLDEyLjYsMjMuMywyMC42YzkuNyw2LjksMTUuNywxMS43LDE3LjksMTQuNGMyLjIsMi43LDMuMyw1LjMsMy4zLDcuOWMwLDMuMi0xLjQsNS45LTQuMyw4LjMNCgkJYy0yLjksMi4zLTYuNywzLjUtMTEuNSwzLjVjLTEyLjEsMC0yMy4zLTYuNy0zMy41LTIwLjJsLTIyLjUsMjYuMmMxMCwxMC42LDE5LjEsMTgsMjcuMiwyMmM4LjEsNCwxNy4yLDYsMjcuMSw2DQoJCWMxNy4yLDAsMzAuMy00LjksMzkuNC0xNC43YzkuMS05LjgsMTMuNi0yMC4zLDEzLjYtMzEuM2MwLTguNC0yLjItMTYuMS02LjYtMjMuM2MtNC40LTcuMS0xMy42LTE1LjctMjcuNi0yNS43DQoJCWMtOC44LTYuMy0xNC0xMC41LTE1LjctMTIuN2MtMS44LTIuMi0yLjctNC40LTIuNy02LjZDODk4LjIsMTY0LjksODk5LjQsMTYyLjksOTAxLjcsMTYxLjF6Ii8+DQoJPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxMDM4LjcsMjE3LjIgMTAwOS44LDEyOS4xIDk3NCwxMjkuMSAxMDE1LjgsMjU3LjQgOTczLjYsMzMyIDEwMTIuMSwzMzIgMTEyOC44LDEyOS4xIDEwODkuNSwxMjkuMSAJDQoJCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NTEuNSwxNTQuMWwtNzAuNCwwbDUuOC00MS43YzAsMCw3NC43LTAuMSw3NS4xLTAuMWM5LjgsMCwxNy44LTgsMTcuOC0xNy44YzAtOS44LTgtMTcuOC0xNy44LTE3LjgNCgkJYy0wLjMsMC0xMDguNCwwLTEwOC40LDBMNTI2LDI3Ny43aDExMy4ydjBjOS41LTAuMiwxNy4yLTgsMTcuMi0xNy41YzAtOS43LTcuOS0xNy42LTE3LjYtMTcuNmMtMC40LDAtNzAuMiwwLjEtNzAuMiwwLjFsNy40LTUzLjMNCgkJYzAsMCw3MS43LDAuMSw3Mi4zLDAuMWM5LjgsMCwxNy44LTgsMTcuOC0xNy44QzY2Ni4zLDE2Mi44LDY1OS45LDE1NS41LDY1MS41LDE1NC4xeiIvPg0KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMjY4LjQsNzYuOGMtMC4zLDAtMTA4LjQsMC0xMDguNCwwbC0yNy40LDIwMC44aDExMy4zdjBjOS41LTAuMiwxNy4yLTgsMTcuMi0xNy41YzAtOS43LTcuOS0xNy42LTE3LjYtMTcuNg0KCQljLTAuNCwwLTcwLjIsMC4xLTcwLjIsMC4xbDcuNC01My4zYzAsMCw3MS43LDAuMSw3Mi40LDAuMWM5LjgsMCwxNy44LTgsMTcuOC0xNy44YzAtOC44LTYuNC0xNi4xLTE0LjgtMTcuNWwtNzAuNCwwbDUuOC00MS43DQoJCWMwLDAsNzQuNy0wLjEsNzUuMS0wLjFjOS44LDAsMTcuOC04LDE3LjgtMTcuOEMxMjg2LjIsODQuOCwxMjc4LjMsNzYuOCwxMjY4LjQsNzYuOHoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTQ3MC43LDE3M2MwLTE5LjctNC42LTM3LjItMTMuNy01Mi4zYy05LjEtMTUuMS0yMC45LTI2LjItMzUuNS0zMy4yYy0xNC42LTcuMS0zNi43LTEwLjYtNjYuNi0xMC42aC0zMS44DQoJCWwtMjcuNCwyMDAuOGg2Mi40YzI2LjIsMCw0Ni43LTMuOSw2MS40LTExLjdjMTQuNy03LjgsMjctMjAuMiwzNi43LTM3LjFDMTQ2NS45LDIxMS45LDE0NzAuNywxOTMuMywxNDcwLjcsMTczeiBNMTQyMS4zLDIxNC41DQoJCWMtNy4zLDExLTE2LjksMTguOC0yOC45LDIzLjNjLTguNiwzLjItMjIuNCw0LjgtNDEuNSw0LjhoLTEyLjRsMTcuNy0xMzAuNGg5LjVjMTUuNSwwLDI3LjksMi40LDM3LjIsNy4zDQoJCWM5LjMsNC45LDE2LjUsMTEuOCwyMS43LDIwLjhjNS4xLDksNy43LDIwLjEsNy43LDMzLjRDMTQzMi4yLDE4OS44LDE0MjguNiwyMDMuNSwxNDIxLjMsMjE0LjV6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE2MTkuMiwxNzAuN2wtMjIuMywxMi4zYy0xLjgsMTYuMi0xNS42LDI4LjctMzIuMiwyOC43Yy0xNy45LDAtMzIuNC0xNC41LTMyLjQtMzIuNA0KCQljMC0xNy45LDE0LjUtMzIuNCwzMi40LTMyLjRjNi45LDAsMTMuMywyLjIsMTguNSw1LjhsMjcuNy0xNS4zbC0xNS02MC4yaC0zMS43bC0xMDgsMjAwaDQwLjRsMjIuOC00Mi42aDc5LjRsMTAuNiw0Mi42aDM2LjQNCgkJTDE2MTkuMiwxNzAuN3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTU1Mi44LDE3OC41YzAsNi45LDUuNiwxMi41LDEyLjUsMTIuNWM2LjksMCwxMi41LTUuNiwxMi41LTEyLjVjMC02LjktNS42LTEyLjUtMTIuNS0xMi41DQoJCUMxNTU4LjQsMTY2LDE1NTIuOCwxNzEuNiwxNTUyLjgsMTc4LjV6Ii8+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTgxNC44LDE1Mi41QzgxNC44LDE1Mi41LDgxNC44LDE1Mi40LDgxNC44LDE1Mi41bC0xMi41LDBsLTEuMy0yLjRjLTUuMS04LjEtMTEuNS0xNC4yLTE5LjItMTguNA0KCQljLTcuOC00LjItMjAuMS02LjMtMjkuMy02LjNjLTEzLjcsMC0yNi44LDMuNy0zOS4zLDExLjFjLTEyLjUsNy40LTIyLjUsMTcuNy0yOS45LDMxYy03LjQsMTMuMi0xMS4yLDI3LjItMTEuMiw0MS44DQoJCWMwLDE5LjIsNS44LDM2LDE3LjQsNTAuNWMxMS42LDE0LjUsMjcuMywyMS43LDQ3LDIxLjdjOC42LDAsMTYuMy0xLjQsMjMuMi00LjRjNi45LTIuOSwxNC4zLTgsMjIuMi0xNS40YzAsMCw5LjMsOC4xLDkuNCw4DQoJCWM1LjgsNC42LDEzLDcuNSwyMC44LDhoMy42bDAuNS00LjNsMTIuNy0xMDYuOWMtMC4xLDAtMC4xLDAtMC4yLDBDODI4LjcsMTU4LjgsODIyLjUsMTUyLjYsODE0LjgsMTUyLjV6IE03ODUuNiwyMjQuMg0KCQljLTQuNSw4LjUtMTAuMSwxNC44LTE2LjgsMTguOGMtNi43LDQtMTQuNSw2LTIzLjUsNmMtMTAuOCwwLTE5LjYtMy41LTI2LjUtMTAuN2MtNi45LTcuMS0xMC4zLTE2LjUtMTAuMy0yOC4xDQoJCWMwLTE1LjEsNC41LTI3LjQsMTMuNi0zN2M5LjEtOS42LDIwLjEtMTQuMywzMy4xLTE0LjNjMTEuMiwwLDIwLjIsMy42LDI3LDEwLjdjNi44LDcuMiwxMC4yLDE2LjYsMTAuMiwyOC40DQoJCUM3OTIuNCwyMDYuOSw3OTAuMSwyMTUuNyw3ODUuNiwyMjQuMnoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDA0LjMsOTYuM2MtNy41LTE5LjktMTkuNy0zNy44LTM1LjgtNTIuM2MtMjQuNy0yMi4yLTU2LjctMzQuNS05MC0zNC41Yy0yOC44LDAtNTYuMyw5LTc5LjUsMjYNCgkJYy0xMS4yLDguMi0yMC45LDE3LjktMjguOSwyOC45Yy01LTAuNy0xMC4xLTEuMS0xNS4zLTEuMWMtMjguNywwLTU1LjgsMTEuMi03Ni4xLDMxLjVjLTIwLjMsMjAuMy0zMS41LDQ3LjMtMzEuNSw3Ni4xDQoJCWMwLDI2LjcsOS45LDUyLjMsMjcuOCw3Mi4xYzE0LjIsMTUuNywzMi42LDI2LjgsNTIuOSwzMmM4LjgsMjYuMiwzMy42LDQ1LjEsNjIuNyw0NS4xYzM2LjUsMCw2Ni4yLTI5LjcsNjYuMi02Ni4yDQoJCWMwLTIuMS0wLjEtNC4zLTAuMy02LjRsOTIuOS00OC44bC0yMC4zLTM1LjJsLTg4LjgsNDYuNmMtMTIuMS0xMy44LTI5LjktMjIuNS00OS43LTIyLjVjLTI4LjcsMC01My4yLDE4LjQtNjIuNCw0NA0KCQljLTIzLjQtMTAuMy0zOS44LTMzLjYtMzkuOC02MC44YzAtMzYuNiwyOS43LTY2LjQsNjYuNC02Ni40YzEyLjksMCwyNSwzLjcsMzUuMiwxMC4xYzEyLjMtMzcuMSw0Ny4zLTYzLjksODguNS02My45DQoJCWM0OCwwLDg3LjQsMzYuMiw5Mi43LDgyLjdjMS43LTAuMiwzLjQtMC4zLDUuMS0wLjNjMjguNywwLDUyLDIzLjMsNTIsNTJjMCwyNy4yLTIwLjksNDkuNS00Ny41LDUxLjhsLTI5LjcsMA0KCQljLTEuMy0wLjMtMi43LTAuNC00LjEtMC40Yy0xMS41LDAtMjAuOCw5LjMtMjAuOCwyMC44YzAsMTAuOSw4LjQsMTkuOCwxOS4xLDIwLjd2MC4ybDM1LjUsMGwxLjgsMGwxLjgtMC4yDQoJCWMyMy4yLTIsNDQuNy0xMi41LDYwLjUtMjkuN2MxNS45LTE3LjMsMjQuNy0zOS43LDI0LjctNjMuMkM0NjkuNiwxNDMuNiw0NDIuMSwxMDguMiw0MDQuMyw5Ni4zeiBNMTkwLjYsMjI4LjMNCgkJYzE0LjEsMCwyNS42LDExLjUsMjUuNiwyNS42YzAsMTQuMS0xMS41LDI1LjYtMjUuNiwyNS42Yy0xNC4xLDAtMjUuNi0xMS41LTI1LjYtMjUuNkMxNjUsMjM5LjgsMTc2LjUsMjI4LjMsMTkwLjYsMjI4LjN6Ii8+DQo8L2c+DQo8L3N2Zz4NCg=="
+                }
+            }
+        },
+        "ggec6d93d66490ec27a": {
+            "head": {
+                "x": 655,
+                "y": -435,
+                "c_para": "package`CONN-TH_B4B-XH-A-LF-SN`BOM_Supplier`LCSC`BOM_Supplier Part`C144395`BOM_Manufacturer`JST Sales America`BOM_Manufacturer Part`B4B-XH-A(LF)(SN)`Contributor`LCSC`BOM_JLCPCB Part Class`Extended Part`spicePre`U`spiceSymbolName`B4B-XH-A(LF)(SN)`",
+                "rotation": "",
+                "importFlag": "0",
+                "gId": "ggec6d93d66490ec27a",
+                "puuid": "942ad18d41734ab78ea43df1a79cf33f",
+                "uuid": "56e0f24eac1546d49cbc18d9dc0216e9",
+                "locked": "0",
+                "bind_pcb_id": "3cc463e5ee53b3c2",
+                "convert_to_pcb": "yes",
+                "add_into_bom": "yes",
+                "datastrid": "3fc8a531bfd34528b24df3700463cef3",
+                "utime": "1641819600",
+                "pdatastrid": "e771dafcd1884b4f995d3f533e15bff0"
+            },
+            "itemOrder": [
+                "gge235",
+                "gge241",
+                "gge247",
+                "gge250",
+                "gge253",
+                "gge274",
+                "gge295",
+                "gge316"
+            ],
+            "annotation": {
+                "gge235": {
+                    "mark": "N",
+                    "x": "653.04",
+                    "y": "-468",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "B4B-XH-A(LF)(SN)",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge235",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge241": {
+                    "mark": "P",
+                    "x": "653.04",
+                    "y": "-477.42",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "U1",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge241",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                }
+            },
+            "rect": {
+                "gge247": {
+                    "x": "645",
+                    "y": "-465",
+                    "rx": "2",
+                    "ry": "2",
+                    "width": "40",
+                    "height": "50",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge247",
+                    "locked": "0",
+                    "c_etype": ""
+                }
+            },
+            "ellipse": {
+                "gge250": {
+                    "cx": "650",
+                    "cy": "-460",
+                    "rx": "1.5",
+                    "ry": "1.5",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "#3A3F4B",
+                    "gId": "gge250",
+                    "locked": "0"
+                }
+            },
+            "pin": {
+                "gge253": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "1",
+                        "x": 635,
+                        "y": -455,
+                        "rotation": "180",
+                        "gId": "gge253",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 635,
+                        "y": -455
+                    },
+                    "path": {
+                        "pathString": "M 635 -455 h 10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "648.7",
+                        "y": "-451",
+                        "rotation": "0",
+                        "text": "1",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "644.5",
+                        "y": "-456",
+                        "rotation": "0",
+                        "text": "1",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "642",
+                        "y": "-455"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 645 -452 L 648 -455 L 645 -458"
+                    },
+                    "gId": "gge253"
+                },
+                "gge274": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "2",
+                        "x": 635,
+                        "y": -445,
+                        "rotation": "180",
+                        "gId": "gge274",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 635,
+                        "y": -445
+                    },
+                    "path": {
+                        "pathString": "M 635 -445 h 10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "648.7",
+                        "y": "-441",
+                        "rotation": "0",
+                        "text": "Special",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "644.5",
+                        "y": "-446",
+                        "rotation": "0",
+                        "text": "2",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "642",
+                        "y": "-445"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 645 -442 L 648 -445 L 645 -448"
+                    },
+                    "gId": "gge274"
+                },
+                "gge295": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "3",
+                        "x": 635,
+                        "y": -435,
+                        "rotation": "180",
+                        "gId": "gge295",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 635,
+                        "y": -435
+                    },
+                    "path": {
+                        "pathString": "M 635 -435 h 10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "648.7",
+                        "y": "-431",
+                        "rotation": "0",
+                        "text": "3",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "644.5",
+                        "y": "-436",
+                        "rotation": "0",
+                        "text": "3",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "642",
+                        "y": "-435"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 645 -432 L 648 -435 L 645 -438"
+                    },
+                    "gId": "gge295"
+                },
+                "gge316": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "4",
+                        "x": 635,
+                        "y": -425,
+                        "rotation": "180",
+                        "gId": "gge316",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 635,
+                        "y": -425
+                    },
+                    "path": {
+                        "pathString": "M 635 -425 h 10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "648.7",
+                        "y": "-421",
+                        "rotation": "0",
+                        "text": "4",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "644.5",
+                        "y": "-426",
+                        "rotation": "0",
+                        "text": "4",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "642",
+                        "y": "-425"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 645 -422 L 648 -425 L 645 -428"
+                    },
+                    "gId": "gge316"
+                }
+            }
+        },
+        "gge1dc71d6334fc68d7": {
+            "head": {
+                "x": 550,
+                "y": -445,
+                "c_para": "package`CONN-TH_B4B-XH-A-LF-SN`BOM_Supplier`LCSC`BOM_Supplier Part`C144395`BOM_Manufacturer`JST Sales America`BOM_Manufacturer Part`B4B-XH-A(LF)(SN)`Contributor`LCSC`BOM_JLCPCB Part Class`Extended Part`spicePre`U`spiceSymbolName`B4B-XH-A(LF)(SN)`",
+                "rotation": "180",
+                "importFlag": "0",
+                "gId": "gge1dc71d6334fc68d7",
+                "puuid": "942ad18d41734ab78ea43df1a79cf33f",
+                "uuid": "56e0f24eac1546d49cbc18d9dc0216e9",
+                "locked": "0",
+                "bind_pcb_id": "2bb9a75c0b6f064c",
+                "convert_to_pcb": "yes",
+                "add_into_bom": "yes",
+                "datastrid": "3fc8a531bfd34528b24df3700463cef3",
+                "utime": "1641819600",
+                "pdatastrid": "e771dafcd1884b4f995d3f533e15bff0"
+            },
+            "itemOrder": [
+                "gge454",
+                "gge460",
+                "gge466",
+                "gge469",
+                "gge472",
+                "gge493",
+                "gge514",
+                "gge535"
+            ],
+            "annotation": {
+                "gge454": {
+                    "mark": "N",
+                    "x": "539.54",
+                    "y": "-468",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "B4B-XH-A(LF)(SN)",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge454",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                },
+                "gge460": {
+                    "mark": "P",
+                    "x": "539.54",
+                    "y": "-476.82",
+                    "rotation": "0",
+                    "fillColor": "#979FAD",
+                    "fontFamily": "Arial",
+                    "fontSize": "",
+                    "fontWeight": "",
+                    "fontStyle": "",
+                    "dominantBaseline": "",
+                    "type": "comment",
+                    "string": "CN-XH",
+                    "visible": "1",
+                    "textAnchor": "start",
+                    "gId": "gge460",
+                    "locked": "0",
+                    "c_etype": "pinpart"
+                }
+            },
+            "rect": {
+                "gge466": {
+                    "x": "520",
+                    "y": "-465",
+                    "rx": "2",
+                    "ry": "2",
+                    "width": "40",
+                    "height": "50",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "none",
+                    "gId": "gge466",
+                    "locked": "0",
+                    "c_etype": ""
+                }
+            },
+            "ellipse": {
+                "gge469": {
+                    "cx": "555",
+                    "cy": "-420",
+                    "rx": "1.5",
+                    "ry": "1.5",
+                    "strokeColor": "#979FAD",
+                    "strokeWidth": "1",
+                    "strokeStyle": "0",
+                    "fillColor": "#3A3F4B",
+                    "gId": "gge469",
+                    "locked": "0"
+                }
+            },
+            "pin": {
+                "gge472": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "1",
+                        "x": 570,
+                        "y": -425,
+                        "rotation": "0",
+                        "gId": "gge472",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 570,
+                        "y": -425
+                    },
+                    "path": {
+                        "pathString": "M 570 -425 h -10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "556.3",
+                        "y": "-421",
+                        "rotation": "0",
+                        "text": "1",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "560.5",
+                        "y": "-426",
+                        "rotation": "0",
+                        "text": "1",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "563",
+                        "y": "-425"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 560 -428 L 557 -425 L 560 -422"
+                    },
+                    "gId": "gge472"
+                },
+                "gge493": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "2",
+                        "x": 570,
+                        "y": -435,
+                        "rotation": "0",
+                        "gId": "gge493",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 570,
+                        "y": -435
+                    },
+                    "path": {
+                        "pathString": "M 570 -435 h -10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "556.3",
+                        "y": "-431",
+                        "rotation": "0",
+                        "text": "2",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "560.5",
+                        "y": "-436",
+                        "rotation": "0",
+                        "text": "2",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "563",
+                        "y": "-435"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 560 -438 L 557 -435 L 560 -432"
+                    },
+                    "gId": "gge493"
+                },
+                "gge514": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "3",
+                        "x": 570,
+                        "y": -445,
+                        "rotation": "0",
+                        "gId": "gge514",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 570,
+                        "y": -445
+                    },
+                    "path": {
+                        "pathString": "M 570 -445 h -10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "556.3",
+                        "y": "-441",
+                        "rotation": "0",
+                        "text": "3",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "560.5",
+                        "y": "-446",
+                        "rotation": "0",
+                        "text": "3",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "563",
+                        "y": "-445"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 560 -448 L 557 -445 L 560 -442"
+                    },
+                    "gId": "gge514"
+                },
+                "gge535": {
+                    "configure": {
+                        "display": "show",
+                        "electric": "0",
+                        "spicePin": "4",
+                        "x": 570,
+                        "y": -455,
+                        "rotation": "0",
+                        "gId": "gge535",
+                        "locked": "0"
+                    },
+                    "pinDot": {
+                        "x": 570,
+                        "y": -455
+                    },
+                    "path": {
+                        "pathString": "M 570 -455 h -10",
+                        "pinColor": "#61AEEF"
+                    },
+                    "name": {
+                        "visible": "1",
+                        "x": "556.3",
+                        "y": "-451",
+                        "rotation": "0",
+                        "text": "4",
+                        "textAnchor": "end",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "num": {
+                        "visible": "1",
+                        "x": "560.5",
+                        "y": "-456",
+                        "rotation": "0",
+                        "text": "4",
+                        "textAnchor": "start",
+                        "fontFamily": "",
+                        "fontSize": "",
+                        "fillColor": "#979FAD"
+                    },
+                    "dot": {
+                        "visible": "0",
+                        "x": "563",
+                        "y": "-455"
+                    },
+                    "clock": {
+                        "visible": "0",
+                        "pathString": "M 560 -458 L 557 -455 L 560 -452"
+                    },
+                    "gId": "gge535"
+                }
+            }
+        }
+    },
+    "wire": {
+        "gge571": {
+            "pointArr": [
+                {
+                    "x": 570,
+                    "y": -445
+                },
+                {
+                    "x": 635,
+                    "y": -445
+                }
+            ],
+            "strokeColor": "#98C379",
+            "strokeWidth": "1",
+            "strokeStyle": "0",
+            "fillColor": "none",
+            "gId": "gge571",
+            "locked": "0"
+        },
+        "gge574": {
+            "pointArr": [
+                {
+                    "x": 570,
+                    "y": -455
+                },
+                {
+                    "x": 635,
+                    "y": -455
+                }
+            ],
+            "strokeColor": "#98C379",
+            "strokeWidth": "1",
+            "strokeStyle": "0",
+            "fillColor": "none",
+            "gId": "gge574",
+            "locked": "0"
+        },
+        "gge593": {
+            "pointArr": [
+                {
+                    "x": 570,
+                    "y": -425
+                },
+                {
+                    "x": 590,
+                    "y": -425
+                },
+                {
+                    "x": 590,
+                    "y": -410
+                },
+                {
+                    "x": 615,
+                    "y": -410
+                },
+                {
+                    "x": 615,
+                    "y": -425
+                },
+                {
+                    "x": 635,
+                    "y": -425
+                }
+            ],
+            "strokeColor": "#98C379",
+            "strokeWidth": "1",
+            "strokeStyle": "0",
+            "fillColor": "none",
+            "gId": "gge593",
+            "locked": "0"
+        }
+    },
+    "annotation": {
+        "gge577": {
+            "mark": "L",
+            "x": "615",
+            "y": "-495",
+            "rotation": "0",
+            "fillColor": "#979FAD",
+            "fontFamily": "",
+            "fontSize": "9pt",
+            "fontWeight": "",
+            "fontStyle": "",
+            "dominantBaseline": "",
+            "type": "comment",
+            "string": "Sample Text",
+            "visible": "1",
+            "textAnchor": "start",
+            "gId": "gge577",
+            "locked": "0",
+            "c_etype": "pinpart"
+        }
+    },
+    "rect": {
+        "gge589": {
+            "x": "510",
+            "y": "-535",
+            "rx": "",
+            "ry": "",
+            "width": "245",
+            "height": "170",
+            "strokeColor": "#FFFFFF",
+            "strokeWidth": "1",
+            "strokeStyle": "0",
+            "fillColor": "none",
+            "gId": "gge589",
+            "locked": "0",
+            "c_etype": ""
+        }
+    },
+    "head": {
+        "docType": "1",
+        "editorVersion": "6.4.32",
+        "newgId": true,
+        "c_para": "Prefix Start`1`",
+        "c_spiceCmd": "null",
+        "hasIdFlag": true,
+        "uuid": "51a73d0719834e979a0fb303fd41eab9",
+        "x": "0",
+        "y": "0",
+        "portOfADImportHack": "",
+        "importFlag": 0,
+        "transformList": ""
+    },
+    "BBox": {
+        "x": 0,
+        "y": -806,
+        "width": 1149,
+        "height": 806.7
+    },
+    "importFlag": 0
+}

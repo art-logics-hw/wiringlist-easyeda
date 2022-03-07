@@ -111,8 +111,7 @@ function list_wiring(essential_source) {
     return table
 }
 
-function print_table(ids = []) {
-    const src = api('getSource', {type:'json'})
+function print_table(src, ids = []) {
     let table = list_wiring(essensify_source(src, ids))
     // console.table(table)
     const thead = '<tr><th>Connector 1</th><th>Connector 2</th><th>Size</th><th>Color</th><th>Description</th></tr>'
@@ -161,32 +160,40 @@ function print_table(ids = []) {
     newWin.document.write(html)
 }
 
-api('createCommand', {
-    'extension-generate-wiringlist' : () => {
-        ids = api('getSelectedIds')
-		ids = ids.split(',')
-        if (ids.length == 1 && ids[0] == '') {
-            ids = []
+try {
+    api('createCommand', {
+        'extension-generate-wiringlist' : () => {
+            ids = api('getSelectedIds')
+            ids = ids.split(',')
+            if (ids.length == 1 && ids[0] == '') {
+                ids = []
+            }
+            if (ids.length == 0) {
+                $.messager.error("No part selected. Select two parts and try again!")
+            } else if (ids.length != 2) {
+                $.messager.error("Must select only two parts.")
+            } else {
+                const src = api('getSource', {type:'json'})
+                console.log(src)
+                print_table(src, ids)
+            }
         }
-        if (ids.length == 0) {
-            $.messager.error("No part selected. Select two parts and try again!")
-        } else if (ids.length != 2) {
-            $.messager.error("Must select only two parts.")
-        } else {
-            print_table(ids)
-        }
-    }
-});
+    })
 
-api('createToolbarButton', {
-    icon: api('getRes', { file: 'logo.png' }),
-    title: 'Main Menu Item Tooltip',
-    fordoctype: 'sch',
-    menu:[
-        {
-            "text":"Generate Wiring List", 
-            "cmd":"extension-generate-wiringlist",
-            icon: api('getRes', { file: 'logo.png' })
-        },
-    ]
-});
+    api('createToolbarButton', {
+        icon: api('getRes', { file: 'logo.png' }),
+        title: 'Main Menu Item Tooltip',
+        fordoctype: 'sch',
+        menu:[
+            {
+                "text":"Generate Wiring List",
+                "cmd":"extension-generate-wiringlist",
+                icon: api('getRes', { file: 'logo.png' })
+            },
+        ]
+    })
+} catch {
+    console.log('api() function call failed.')
+}
+
+module.exports = _essensify_part
