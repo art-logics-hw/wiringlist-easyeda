@@ -159,6 +159,10 @@ function print_table(src, ids = []) {
 }
 
 try {
+    /* api() function is defined in EasyEDA's javascript context.
+       this makes on Jest test failing.
+       So wrap with try-catch statement, to run tests
+    */
     api('createCommand', {
         'extension-generate-wiringlist' : () => {
             ids = api('getSelectedIds')
@@ -192,12 +196,15 @@ try {
     })
 } catch {
     console.log('api() function call failed.')
-}
 
-module.exports = {
-    _essensify_part: _essensify_part,
-    _essensify_wire: _essensify_wire,
-    essensify_source: essensify_source,
-    _is_in: _is_in,
-    list_wiring: list_wiring
+    /* module.exports gets error on EasyEDA's loading.
+       So it needed to be moved into this scope to not be excuted from EasyEDA
+    */
+    module.exports = {
+        _essensify_part: _essensify_part,
+        _essensify_wire: _essensify_wire,
+        essensify_source: essensify_source,
+        _is_in: _is_in,
+        list_wiring: list_wiring
+    }
 }
