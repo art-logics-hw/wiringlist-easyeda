@@ -27,3 +27,11 @@ test("_essensify_wire(): extract essential wire information", () => {
     }
     expect(extension._essensify_wire(wire)).toMatchObject(essentified_wire)
 })
+
+test("essensify_source(): extract essential information", () => {
+    const essensified_source = extension.essensify_source(src)
+    const parts = essensified_source.parts
+    expect(parts.length).toEqual(2)
+    expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
+    expect(essensified_source.wires.length).toEqual(3)
+})

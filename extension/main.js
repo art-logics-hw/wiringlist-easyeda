@@ -198,5 +198,6 @@ try {
 
 module.exports = {
     _essensify_part: _essensify_part,
-    _essensify_wire: _essensify_wire
+    _essensify_wire: _essensify_wire,
+    essensify_source: essensify_source
 }
