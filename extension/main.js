@@ -157,8 +157,10 @@ function print_table(src, ids = []) {
     let left, top
     left = (window.screen.width / 2) - ((width / 2) + 10)
     top = (window.screen.height / 2) - ((height / 2) + 50)
-    let newWin = window.open('url','ART Logics Wiring List', `status=no,height=${height},width=${width},resizable=yes,left=${left},top=${top},screenX=${left},screenY=${top},toolbar=no,menubar=no,scrollbars=no,location=no,directories=no`)
-    newWin.document.write(html)
+    const winUrl = URL.createObjectURL(
+        new Blob([html], { type: "text/html" })
+    );
+    let newWin = window.open(winUrl,'ART Logics Wiring List', `status=no,height=${height},width=${width},resizable=yes,left=${left},top=${top},screenX=${left},screenY=${top},toolbar=no,menubar=no,scrollbars=no,location=no,directories=no`)
 }
 
 try {
