@@ -71,7 +71,8 @@ test("list_wiring(): get wiring list", () => {
     const table = [
         {"color": "", "connector1": "U1-1", "connector2": "CN-XH-4", "description": "", "size": ""},
         {"color": "", "connector1": "U1-2", "connector2": "CN-XH-3", "description": "", "size": ""},
-        {"color": "", "connector1": "U1-4", "connector2": "CN-XH-1", "description": "", "size": ""}
+        {"color": "", "connector1": "U1-4", "connector2": "CN-XH-1", "description": "", "size": ""},
+        {"color": "", "connector1": "CN-XH-2", "connector2": "SPECIAL", "description": "", "size": ""}
     ]
     expect(extension.list_wiring((essential_source))).toMatchObject(table)
 })

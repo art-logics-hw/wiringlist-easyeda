@@ -121,6 +121,19 @@ function list_wiring(essential_source) {
                 }
             }
         }
+        for (const netflag of essential_source.netflags) {
+            for (const[pin_a_id, pin_a] of Object.entries(a.pins)) {
+                if (_is_wired(pin_a, netflag, essential_source.wires)) {
+                    table.push(new TableRow(
+                        a.id + '-' + pin_a_id,
+                        netflag.name,
+                        '',
+                        '',
+                        ''
+                    ))
+                }
+            }
+        }
     }
     return table
 }
