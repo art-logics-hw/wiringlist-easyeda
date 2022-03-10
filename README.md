@@ -6,7 +6,7 @@
 <h1>ARTLogics EasyEDA Extension</h1>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://semver.org)
+[![Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://semver.org)
 </div>
 
 
@@ -27,7 +27,7 @@ Helper features for ARTLogics hardware designers
 **Wiring List** feature is only available in schematic editor. It is not available for PCB editor or any other kind of viewer instances.
 
 * Open a schematics
-* Select two or more connecters wired each other
+* Select two or more connecters wired each other, or select wires and netflags together by mouse dragging
 * Click `ART Logics > Generate Wiring List` on the menu bar
 * If the result table is good, press `Ctrl+A` and paste to document editor (MS Word or LibreOffice Writer)
 
@@ -35,8 +35,5 @@ Helper features for ARTLogics hardware designers
 
 ## Limitations
 
-Currently only direct connection between connectors are recognized. <br />
-Thus, these limitations exist.
-
 * Wires with joints: If the wire has joints and devided into multi parts, the extension does not recognize the wiring.
-* Net port: if the other end of wire is a net port, the extension cannot generate wiring list between the connector and net port.
+* (fixed on v1.0.1) ~Net flags~
