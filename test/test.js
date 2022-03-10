@@ -33,7 +33,7 @@ test("essensify_source(): extract essential information", () => {
     const parts = essential_source.parts
     expect(parts.length).toEqual(2)
     expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
-    expect(essential_source.wires.length).toEqual(3)
+    expect(essential_source.wires.length).toEqual(4)
 
     essential_source = extension.essensify_source(src, ["ggec6d93d66490ec27a"])
     expect(essential_source.parts.length).toEqual(1)
