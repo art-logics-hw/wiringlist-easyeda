@@ -7,7 +7,10 @@
         "gge574",
         "gge577",
         "gge589",
-        "gge593"
+        "gge593",
+        "gge597",
+        "gge609",
+        "gge639"
     ],
     "colors": {
         "background": "#2F333D",
@@ -61,7 +64,7 @@
                 "puuid": "",
                 "uuid": "",
                 "locked": "0",
-                "bind_pcb_id": "a05dd5a058f99023",
+                "bind_pcb_id": "c4c42d1ef87f3c65",
                 "convert_to_pcb": "yes",
                 "add_into_bom": "yes",
                 "datastrid": "",
@@ -899,7 +902,7 @@
                 "puuid": "942ad18d41734ab78ea43df1a79cf33f",
                 "uuid": "56e0f24eac1546d49cbc18d9dc0216e9",
                 "locked": "0",
-                "bind_pcb_id": "3cc463e5ee53b3c2",
+                "bind_pcb_id": "56713d49f28b81fc",
                 "convert_to_pcb": "yes",
                 "add_into_bom": "yes",
                 "datastrid": "3fc8a531bfd34528b24df3700463cef3",
@@ -1209,7 +1212,7 @@
                 "puuid": "942ad18d41734ab78ea43df1a79cf33f",
                 "uuid": "56e0f24eac1546d49cbc18d9dc0216e9",
                 "locked": "0",
-                "bind_pcb_id": "2bb9a75c0b6f064c",
+                "bind_pcb_id": "ef173e6d0da24a7d",
                 "convert_to_pcb": "yes",
                 "add_into_bom": "yes",
                 "datastrid": "3fc8a531bfd34528b24df3700463cef3",
@@ -1579,6 +1582,32 @@
             "fillColor": "none",
             "gId": "gge593",
             "locked": "0"
+        },
+        "gge639": {
+            "pointArr": [
+                {
+                    "x": 615,
+                    "y": -395
+                },
+                {
+                    "x": 600,
+                    "y": -395
+                },
+                {
+                    "x": 600,
+                    "y": -435
+                },
+                {
+                    "x": 570,
+                    "y": -435
+                }
+            ],
+            "strokeColor": "#98C379",
+            "strokeWidth": "1",
+            "strokeStyle": "0",
+            "fillColor": "none",
+            "gId": "gge639",
+            "locked": "0"
         }
     },
     "annotation": {
@@ -1619,6 +1648,83 @@
             "c_etype": ""
         }
     },
+    "noconnectflag": {
+        "gge597": {
+            "x": "635",
+            "y": "-435",
+            "gId": "gge597",
+            "pathString": "M 631 -439 L 639 -431 M 639 -439 L 631 -431",
+            "strokeColor": "#33cc33",
+            "locked": "0"
+        }
+    },
+    "netflag": {
+        "gge609": {
+            "configure": {
+                "partId": "part_netLabel_netPort",
+                "x": 615,
+                "y": -395,
+                "rotation": "180",
+                "gId": "gge609",
+                "transform": "",
+                "locked": "0"
+            },
+            "pinDot": {
+                "x": 615,
+                "y": -395
+            },
+            "mark": {
+                "netFlagString": "SPECIAL",
+                "fillColor": "#0000FF",
+                "x": "636.5",
+                "y": "-392.85",
+                "rotation": "0",
+                "textAnchor": "",
+                "visible": 1,
+                "fontFamily": "Times New Roman",
+                "fontSize": "8pt",
+                "gId": "flag_gge7"
+            },
+            "shapes": {
+                "polyline": {
+                    "gge621": {
+                        "pointArr": [
+                            {
+                                "x": 615,
+                                "y": -395
+                            },
+                            {
+                                "x": 620,
+                                "y": -400
+                            },
+                            {
+                                "x": 635,
+                                "y": -400
+                            },
+                            {
+                                "x": 635,
+                                "y": -390
+                            },
+                            {
+                                "x": 620,
+                                "y": -390
+                            },
+                            {
+                                "x": 615,
+                                "y": -395
+                            }
+                        ],
+                        "strokeColor": "#0000FF",
+                        "strokeWidth": "1",
+                        "strokeStyle": "0",
+                        "fillColor": "transparent",
+                        "gId": "gge621",
+                        "locked": "0"
+                    }
+                }
+            }
+        }
+    },
     "head": {
         "docType": "1",
         "editorVersion": "6.4.32",
@@ -1635,9 +1741,9 @@
     },
     "BBox": {
         "x": 0,
-        "y": -806,
+        "y": -806.1,
         "width": 1149,
-        "height": 806.7
+        "height": 806.9
     },
     "importFlag": 0
 }
