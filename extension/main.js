@@ -21,6 +21,14 @@ function _essensify_part(part) {
     }
 }
 
+function _essensify_netflag(netflag) {
+    return {
+        name: netflag.mark.netFlagString,
+        x: netflag.configure.x,
+        y: netflag.configure.y
+    }
+}
+
 function _essensify_wire(wire) {
     return {
         id: wire.gId,
@@ -35,6 +43,7 @@ function _essensify_wire(wire) {
  */
 function essensify_source(source, ids=[]) {
     let parts = []
+    let netflags = []
     let wires = []
     for (const[id, _part] of Object.entries(source.schlib)) {
         if (id.startsWith('frame_lib')) {
@@ -52,12 +61,16 @@ function essensify_source(source, ids=[]) {
             }
         }
     }
+    for (const[id, _netflag] of Object.entries(source.netflag)) {
+        netflags.push(_essensify_netflag(_netflag))
+    }
 
     for (const[id, _wire] of Object.entries(source.wire)) {
         wires.push(_essensify_wire(_wire))
     }
     return {
         parts: parts,
+        netflags: netflags,
         wires: wires
     }
 }
@@ -205,6 +218,7 @@ try {
     */
     module.exports = {
         _essensify_part: _essensify_part,
+        _essensify_netflag: _essensify_netflag,
         _essensify_wire: _essensify_wire,
         essensify_source: essensify_source,
         _is_in: _is_in,

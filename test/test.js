@@ -18,6 +18,17 @@ test("_essensify_part(): extract essential part information", () => {
     expect(extension._essensify_part(part)).toMatchObject(essential_part)
 })
 
+test("_essensify_netflag(): extract essential netflag information", () => {
+    const id = "gge609"
+    const netflag = src.netflag[id]
+    const essential_netflag = {
+        "name": netflag.mark.netFlagString,
+        "x": netflag.configure.x,
+        "y": netflag.configure.y
+    }
+    expect(extension._essensify_netflag(netflag)).toMatchObject(essential_netflag)
+})
+
 test("_essensify_wire(): extract essential wire information", () => {
     const id = "gge571"
     const wire = src.wire[id]
@@ -34,7 +45,8 @@ test("essensify_source(): extract essential information", () => {
     expect(parts.length).toEqual(2)
     expect(parts[0]._id).toEqual("ggec6d93d66490ec27a")
     expect(essential_source.wires.length).toEqual(4)
-
+    expect(essential_source.netflags.length).toEqual(1)
+    
     essential_source = extension.essensify_source(src, ["ggec6d93d66490ec27a"])
     expect(essential_source.parts.length).toEqual(1)
 })
