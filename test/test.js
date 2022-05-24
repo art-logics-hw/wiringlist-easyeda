@@ -1,5 +1,6 @@
 const extension = require('../extension/main.js')
-const src = require('./src.json')
+const src = require('./src.json'),
+    src_colored = require('./src_colored.json')
 
 test("_essensify_part(): extract essential part information", () => {
     const id = "gge1dc71d6334fc68d7"
@@ -73,6 +74,20 @@ test("list_wiring(): get wiring list", () => {
         {"color": "", "connector1": "U1-2", "connector2": "CN-XH-3", "description": "", "size": ""},
         {"color": "", "connector1": "U1-4", "connector2": "CN-XH-1", "description": "", "size": ""},
         {"color": "", "connector1": "CN-XH-2", "connector2": "SPECIAL", "description": "", "size": ""}
+    ]
+    expect(extension.list_wiring((essential_source))).toMatchObject(table)
+})
+
+test("list_wiring(): get wiring list  // for wire colors", () => {
+    const essential_source = extension.essensify_source(src_colored)
+    const table = [
+      { connector1: 'J1-1', connector2: 'U2-1', size: '', color: 'Blue', description: ''},
+      { connector1: 'J1-2', connector2: 'U2-2', size: '', color: 'Red', description: ''},
+      { connector1: 'J1-9', connector2: 'U2-9', size: '', color: 'Orange', description: ''},
+      { connector1: 'J1-10', connector2: 'U2-10', size: '', color: 'Orange', description: ''},
+      { connector1: 'J1-11', connector2: 'U2-11', size: '', color: 'White', description: ''},
+      { connector1: 'J1-12', connector2: 'U2-12', size: '', color: 'Black', description: ''},
+      { connector1: 'J1-18', connector2: 'U2-4', size: '', color: 'Orange', description: ''}
     ]
     expect(extension.list_wiring((essential_source))).toMatchObject(table)
 })

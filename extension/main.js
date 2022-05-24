@@ -32,7 +32,9 @@ function _essensify_netflag(netflag) {
 function _essensify_wire(wire) {
     return {
         id: wire.gId,
-        points: wire.pointArr
+        points: wire.pointArr,
+        strokeColor: wire.strokeColor,
+        strokeStyle: wire.strokeStyle
     }
 }
 
@@ -101,6 +103,25 @@ function _is_wired(pin_a, pin_b, wires) {
     return false
 }
 
+function _get_wire_color(pin_a, wires) {
+    for (const wire of wires) {
+        if (_is_in(pin_a, wire.points)) {
+            if (wire.strokeColor == '#000000' && wire.strokeStyle == 1) {
+                return 'White'
+            } else if (wire.strokeColor == '#000000') {
+                return 'Black'
+            } else if (wire.strokeColor == '#FF0000') {
+                return 'Red'
+            } else if (wire.strokeColor == '#0000FF') {
+                return 'Blue'
+            } else if (wire.strokeColor == '#008800') { // for the default dark green color wires
+                return 'Orange'
+            }
+        }
+    }
+    return ''
+}
+
 function list_wiring(essential_source) {
     let table = []
     for (let i = 0;i < essential_source.parts.length;i++) {
@@ -114,7 +135,7 @@ function list_wiring(essential_source) {
                             a.id + '-' + pin_a_id,
                             b.id + '-' + pin_b_id,
                             '',
-                            '',
+                            _get_wire_color(pin_a, essential_source.wires),
                             ''
                         ))
                     }
@@ -128,7 +149,7 @@ function list_wiring(essential_source) {
                         a.id + '-' + pin_a_id,
                         netflag.name,
                         '',
-                        '',
+                        _get_wire_color(pin_a, essential_source.wires),
                         ''
                     ))
                 }
