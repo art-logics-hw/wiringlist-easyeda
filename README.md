@@ -33,6 +33,28 @@ Helper features for ARTLogics hardware designers
 
 <img src="./doc/usage.gif" />
 
+
+## Wire Size and Color
+
+From version 1.1.0, **Wiring List**  feature supports automatic size and color adding to the table.
+
+Annotation on schematic | Wire size column value
+------------------------|-----------------------
+`Wire Size = 1`         | 1
+`WIRE_SIZE=0.5`         | 0.5
+`wire-size = 2`         | 2
+other                   | (none)
+
+Wire stroke color   | Wire stroke style | Wire color column value
+--------------------|-------------------|------------------------
+`#FF0000`           | line              | Red
+`#0000FF`           | line              | Blue
+`#000000`           | line              | Black
+`#000000`           | dashed            | White
+`#008800` (default) | dashed            | Orange
+Other               | other             | (none)
+
+
 ## Limitations
 
 * Wires with joints: If the wire has joints and devided into multi parts, the extension does not recognize the wiring.
