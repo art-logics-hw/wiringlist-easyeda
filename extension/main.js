@@ -44,6 +44,16 @@ function _essensify_wire(wire) {
  * @return {[Object]}        Source JSON object with essential parts and wiresinformations
  */
 function essensify_source(source, ids=[]) {
+    let wire_size = ''
+    for (const[_annotation_id, annotation] of Object.entries(source.annotation)) {
+        if (ids.indexOf(_annotation_id) != -1) {
+            let text = annotation.string.toLowerCase().replace(/ /g, '').replace(/-/g, '').replace(/_/g, '')
+            if (text.startsWith('wiresize=')) {
+                wire_size = text.substring(9)
+                console.log(wire_size)
+            }
+        }
+    }
     let parts = []
     let netflags = []
     let wires = []
@@ -73,7 +83,8 @@ function essensify_source(source, ids=[]) {
     return {
         parts: parts,
         netflags: netflags,
-        wires: wires
+        wires: wires,
+        wire_size: wire_size
     }
 }
 
@@ -134,7 +145,7 @@ function list_wiring(essential_source) {
                         table.push(new TableRow(
                             a.id + '-' + pin_a_id,
                             b.id + '-' + pin_b_id,
-                            '',
+                            essential_source.wire_size,
                             _get_wire_color(pin_a, essential_source.wires),
                             ''
                         ))
@@ -148,7 +159,7 @@ function list_wiring(essential_source) {
                     table.push(new TableRow(
                         a.id + '-' + pin_a_id,
                         netflag.name,
-                        '',
+                        essential_source.wire_size,
                         _get_wire_color(pin_a, essential_source.wires),
                         ''
                     ))
@@ -227,6 +238,7 @@ try {
             } else {
                 const src = api('getSource', {type:'json'})
                 console.log(src)
+                console.log(ids)
                 print_table(src, ids)
             }
         }
