@@ -8,7 +8,9 @@ function _essensify_part(part) {
     let pins = {}
     for (const[key, value] of Object.entries(part.pin)) {
         pins[value.configure.spicePin] = {
-            name: value.name.text,
+            // pin object has three key properties - configure.spicepin, num.text, ,name.text.
+            // Using num.text temporarily here.
+            name: value.num.text,
             x: value.pinDot.x,
             y: value.pinDot.y
         }
@@ -143,8 +145,10 @@ function list_wiring(essential_source) {
                 for (const[pin_b_id, pin_b] of Object.entries(b.pins)) {
                     if (_is_wired(pin_a, pin_b, essential_source.wires)) {
                         table.push(new TableRow(
-                            a.id + '-' + pin_a_id,
-                            b.id + '-' + pin_b_id,
+                            // a.id + '-' + pin_a_id,  // some components have different pin naming with Spice model
+                            // b.id + '-' + pin_b_id,  // some components have different pin naming with Spice model
+                            a.id + '-' + pin_a.name,
+                            b.id + '-' + pin_b.name,
                             essential_source.wire_size,
                             _get_wire_color(pin_a, essential_source.wires),
                             ''
@@ -157,7 +161,8 @@ function list_wiring(essential_source) {
             for (const[pin_a_id, pin_a] of Object.entries(a.pins)) {
                 if (_is_wired(pin_a, netflag, essential_source.wires)) {
                     table.push(new TableRow(
-                        a.id + '-' + pin_a_id,
+                        // a.id + '-' + pin_a_id,  // some components have different pin naming with Spice model
+                        a.id + '-' + pin_a.name,
                         netflag.name,
                         essential_source.wire_size,
                         _get_wire_color(pin_a, essential_source.wires),
