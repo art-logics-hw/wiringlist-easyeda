@@ -59,3 +59,4 @@ Other               | other             | (none)
 
 * Wires with joints: If the wire has joints and devided into multi parts, the extension does not recognize the wiring.
 * (fixed on v1.0.1) ~Net flags~
+* (fixed on v1.1.1) ~Incorrect list when pin number text is not matching Spice pin number~
