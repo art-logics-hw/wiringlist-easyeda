@@ -10,7 +10,8 @@
 </div>
 
 
-Helper features for ARTLogics hardware designers
+Generating wiring list between components.
+Developed to help ARTLogics hardware designers.
 
 
 ## Installation
